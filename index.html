@@ -1,1 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViewsCalc</title>
 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="app-header">
+    <div class="logo">↗</div>
+  
+    <div class="brand">
+      <h1>ViewsCalc</h1>
+      <p>Calculadora de ganhos do TikTok</p>
+    </div>
+  
+    <div class="rate-badge">R$ 0,50 / 1.000 views</div>
+  </header>
+  
+  <main class="app">
+    <section class="earnings">
+      <div class="eyebrow">Seu pagamento estimado</div>
+      <div class="amount" id="totalMoney">R$ 0,00</div>
+      <div class="earnings-note">
+        Calculado automaticamente com base nas visualizações informadas.
+      </div>
+    </section>
+  
+    <section class="stats">
+      <div class="stat">
+        <div class="stat-label">Total de visualizações</div>
+        <div class="stat-value purple" id="totalViews">0</div>
+      </div>
+  
+      <div class="stat">
+        <div class="stat-label">Vídeos contabilizados</div>
+        <div class="stat-value" id="videoCount">0</div>
+      </div>
+    </section>
+  
+    <section class="videos-section">
+      <div class="section-header">
+        <div>
+          <h2>Seus vídeos</h2>
+          <p class="section-desc">
+            Digite os milhares de views de cada vídeo.
+          </p>
+        </div>
+      </div>
+  
+      <div class="video-list" id="videoList"></div>
+  
+      <div class="actions">
+        <button class="secondary-btn" id="clearBtn" type="button">
+          ↺ Limpar tudo
+        </button>
+  
+        <div class="status" id="status" aria-live="polite">
+          Valores atualizados em tempo real.
+        </div>
+      </div>
+    </section>
+  
+    <footer>
+      VIEWSCALC · FERRAMENTA DE CÁLCULO
+      <br>
+      Cada unidade digitada equivale a 1.000 visualizações.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
